@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cddbf98ca83481446a185b0a0f0cc7d8, type: 3}
+  m_Name: Unit_TEST
+  m_EditorClassIdentifier: 
+  unitId: 999
+  unitName: "\uB354\uBBF8 \uCE90\uB9AD\uD130"
+  unitIcon: {fileID: 379057279, guid: a497d1fd3a7219e47921455b9a632ce4, type: 3}
+  unitDesc: "\uACFC\uAC70 \uC138\uACC4\uAC00 \uD53D\uC140\uB85C \uB098\uB204\uC5B4\uC9C0\uAE30
+    \uC804\uC5D0 \uC874\uC7AC\uD588\uB358 \uCE90\uB9AD\uD130."
+  unitSkill: "\uC8FC\uBCC0\uC758 \uC801\uC744 {0}%\uC758 \uD655\uB960\uB85C \uBD84\uD574\uD55C\uB2E4."
+  unlockItem: "\uB300\uB2E8\uD55C \uC548\uACBD"
+  levelUpMoney: 0a000000140000001e0000002800000032000000
+  skillLevel:
+  - 30
+  - 50
+  - 70
+  - 90
+  - 100
+  powerLevel: 0e0000001900000046000000af00000012020000
+  heartLevel: 8c0000003002000052030000fa050000f1110000
+  speedLevel: 320000003300000035000000370000003a000000
+  spawnTimeLevel: 0a0000000a0000000a0000000a0000000a000000
+  skillCooldownLevel: 84030000bc020000f40100002c01000064000000
+  animatorController: {fileID: 9100000, guid: 9c2b3de448d3a0246805ba148d00af16, type: 2}
