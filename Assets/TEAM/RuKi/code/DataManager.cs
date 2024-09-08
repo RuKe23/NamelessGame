@@ -13,27 +13,15 @@ public class UnitList
 [System.Serializable]
 public class ItemList
 {
-    public float level;
+    public int level;
+
+    [Range(0.0f, 1.0f)]
     public float progress;
 }
 
-public class DataManager : MonoBehaviour
+[System.Serializable]
+public class GameData
 {
-    public static DataManager Instance;
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (Instance != this)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     [Header("List Data")]
     [SerializeField]
     public UnitList[] unitList;
@@ -47,6 +35,63 @@ public class DataManager : MonoBehaviour
     [Header("etc")]
     public UnitData[] combatUnit;
     public bool[] stageClear;
+
+    [Range(0.0f, 1.0f)]
     public float[] challengeProgress;
     public int storyProgress;
+}
+
+public class DataManager : MonoBehaviour
+{
+    public static DataManager Instance;
+    
+    public GameData gameData;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        LoadGameData();
+    }
+
+    private void OnApplicationQuit()
+    {
+        //SaveGameData();
+    }
+
+
+    [ContextMenu("SaveData")]
+    private void SaveGameData()
+    {
+        string jsonData = JsonUtility.ToJson(gameData);
+        PlayerPrefs.SetString("GameData", jsonData);
+        PlayerPrefs.Save();
+    }
+
+    [ContextMenu("LoadData")]
+    private void LoadGameData()
+    {
+        if (PlayerPrefs.HasKey("GameData"))
+        {
+            string jsonData = PlayerPrefs.GetString("GameData");
+            gameData = JsonUtility.FromJson<GameData>(jsonData);
+        }
+    }
+
+    [ContextMenu("DeleteData")]
+    private void DeleteGameData()
+    {
+        if (PlayerPrefs.HasKey("GameData"))
+        {
+            PlayerPrefs.DeleteKey("GameData");
+        }
+    }    
 }

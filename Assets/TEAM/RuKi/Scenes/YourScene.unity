@@ -340,14 +340,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a5bfe943e2340875d282a9b27112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitList: []
-  itemList: []
-  organic: 0
-  coin: 0
-  combatUnit: []
-  stageClear: 
-  challengeProgress: []
-  storyProgress: 0
+  gameData:
+    unitList: []
+    itemList: []
+    organic: 0
+    coin: 0
+    combatUnit: []
+    stageClear: 
+    challengeProgress: []
+    storyProgress: 0
 --- !u!4 &1440315019
 Transform:
   m_ObjectHideFlags: 0
