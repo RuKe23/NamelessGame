@@ -31,4 +31,4 @@ MonoBehaviour:
   speedLevel: 320000003300000035000000370000003a000000
   spawnTimeLevel: 0a0000000a0000000a0000000a0000000a000000
   skillCooldownLevel: 84030000bc020000f40100002c01000064000000
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 9c2b3de448d3a0246805ba148d00af16, type: 2}
