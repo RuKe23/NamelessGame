@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a5bfe943e2340875d282a9b27112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectListData: {fileID: 11400000, guid: db877821f8914724ea260f770e8a0efa, type: 2}
   gameData:
     unitList: []
     itemList: []
