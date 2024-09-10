@@ -21,6 +21,7 @@ MonoBehaviour:
     \uC8FD\uC778\uB2E4."
   unlockRequirement: "\uD589\uBCF5\uD55C \uCE74\uC6B0\uBCF4\uC774\uC640\uC758 \uC804\uD22C\uC5D0\uC11C
     \uC2B9\uB9AC\uD558\uB77C"
+  unlockValue: 1
   levelUpMoney: 0000000000000000000000000000000000000000
   abilityValues:
   - 0

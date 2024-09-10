@@ -19,6 +19,8 @@ public class ItemData : ScriptableObject
     [TextArea]
     public string unlockRequirement;
 
+    public int unlockValue;
+
     [Header("Level Data")]
     public int[] levelUpMoney       = new int[5];
     public float[] abilityValues    = new float[5];

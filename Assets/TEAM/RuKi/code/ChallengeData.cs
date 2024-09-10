@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChallengeData : MonoBehaviour
+[CreateAssetMenu(fileName = "Challenge", menuName = "Scriptble Object/ChallengeData")]
+public class ChallengeData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Main Info")]
+    public int challengeId;
+    public string challengeName;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Desc")]
+    [TextArea]
+    public string challengeDesc;
+    [TextArea]
+    public string unlockRequirement;
+    
+    public int unlockValue;
 }

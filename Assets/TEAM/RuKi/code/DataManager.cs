@@ -3,40 +3,65 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 [System.Serializable]
 public class UnitList
 {
+    [HideInInspector]
+    public string name;
     public int level;
     public bool unlock;
     public UnitData unitData;
+
+    public void Validate()
+    {
+        name = unitData.unitName != "" ? unitData.unitName : "이름 값이 없습니다!";
+    }
 }
 
 [System.Serializable]
 public class ItemList
 {
+    [HideInInspector]
+    public string name;
     public int level;
-
-    [Range(0.0f, 1.0f)]
-    public float progress;
-
+    public int progress;
     public ItemData itemData;
+
+    public void Validate()
+    {
+        name = itemData.itemName != "" ? itemData.itemName : "이름 값이 없습니다!";
+    }
 }
 
 [System.Serializable]
 public class StageList
 {
+    [HideInInspector]
+    public string name;
     public bool clear;
     public StageData stageData;
+
+    public void Validate()
+    {
+        name = stageData.stageName != "" ? stageData.stageName : "이름 값이 없습니다!";
+    }
 }
 
 [System.Serializable]
 public class ChallengeList
 {
-    [Range(0.0f, 1.0f)]
-    public float progress;
+    [HideInInspector]
+    public string name;
+    public int progress;
     public ChallengeData challengeData;
+
+    public void Validate()
+    {
+        name = challengeData.challengeName != "" ? challengeData.challengeName : "이름 값이 없습니다!";
+    }
 }
 
 [System.Serializable]
@@ -61,8 +86,6 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance;
     
-    [SerializeField]
-    private ObjectListData objectListData;
     public GameData gameData;
 
     private void Awake()
@@ -85,6 +108,14 @@ public class DataManager : MonoBehaviour
         //SaveGameData();
     }
 
+    private void OnValidate()
+    {
+        for (int i = 0; i < gameData.unitList.Length; i++) gameData.unitList[i].Validate();
+        for (int i = 0; i < gameData.itemList.Length; i++) gameData.itemList[i].Validate();
+        for (int i = 0; i < gameData.stageList.Length; i++) gameData.stageList[i].Validate();
+        for (int i = 0; i < gameData.challengeList.Length; i++) gameData.challengeList[i].Validate();
+    }
+
 
     [ContextMenu("SaveData")]
     private void SaveGameData()
@@ -104,56 +135,37 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    delegate T delegateIndex<T>( int i );
-    [ContextMenu("DeleteData")]
-    private void DeleteGameData()
+    [ContextMenu("ResetData")]
+    private void ResetGameData()
     {
-        if (PlayerPrefs.HasKey("GameData"))
+        if(EditorUtility.DisplayDialog("ResetData", "데이터를 초기화하시겠습니까?", "확인", "취소"))
         {
-            PlayerPrefs.DeleteKey("GameData");
+            if (PlayerPrefs.HasKey("BaseGameData"))
+            {
+                string jsonData = PlayerPrefs.GetString("BaseGameData");
+                PlayerPrefs.SetString("GameData", jsonData);
+                PlayerPrefs.Save();
+
+                LoadGameData();
+            }
+            else
+            {
+                EditorUtility.DisplayDialog("Erorr", "데이터가 없습니다.", "확인");
+            }
         }
-        LoadGameData();
-
-        ResetGameDate<UnitList, UnitData>(gameData.unitList, objectListData.unitDataList, (i) => gameData.unitList[i].unitData);
-        // gameData.unitList       = new UnitList[5];
-        // gameData.itemList       = GetComponent<ItemList[]>()[5];
-        // gameData.stageList      = GetComponent<UnitList[]>()[5];
-        // gameData.challengeList      = GetComponent<UnitList[]>()[5];
-        
-        // for (int i=0;i<gameData.unitList.Length;i++)      
-        // {
-        //     gameData.unitList[i]                    = GetComponent<UnitList>();
-        //     gameData.unitList[i].unitData           = objectListData.unitDataList[i];
-        // }
-        // for (int i=0;i<gameData.itemList.Length;i++)      
-        // {
-        //     gameData.itemList[i]                    = GetComponent<ItemList>();
-        //     gameData.itemList[i].itemData           = objectListData.itemDataList[i];
-        // }
-        // for (int i=0;i<gameData.stageList.Length;i++)     
-        // {
-        //     gameData.unitList[i]                    = GetComponent<UnitList>();
-        //     gameData.stageList[i].stageData         = objectListData.stageDataList[i];
-        // }
-        // for (int i=0;i<gameData.challengeList.Length;i++) 
-        // {
-        //     gameData.unitList[i]                    = GetComponent<UnitList>();
-        //     gameData.challengeList[i].challengeData = objectListData.challengeDataList[i];
-        // }
-
-        SaveGameData();
+        OnValidate();
     }
 
-    private void ResetGameDate<list, data>(list[] indexList, data[] dataList, delegateIndex<data> indexData)
+    [ContextMenu("SetBaseData")]
+    private void SetBaseData()
     {
-        indexList = new list[dataList.Length];
-
-        for (int i=0;i<indexList.Length;i++)      
+        if(EditorUtility.DisplayDialog("SetBaseData", "베이트데이터를 수정하시겠습니까?\n충돌 가능성이 높으므로 충분한 상의 후 진행해주세요.", "확인", "취소"))
         {
-            indexList[i] = GetComponent<list>();
-            
-            Debug.Log(indexData(i));
-            //int = dataList[i];
+        string jsonData = JsonUtility.ToJson(gameData);
+        PlayerPrefs.SetString("BaseGameData", jsonData);
+        PlayerPrefs.Save();
+
+        EditorUtility.DisplayDialog("완료", "베이스데이터를 수정하였습니다.\n충돌이 일어나지 않기를 바랍니다.", "확인");
         }
     }
 }
