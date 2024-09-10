@@ -17,7 +17,7 @@ public class UnitList
 
     public void Validate()
     {
-        name = unitData.unitName != "" ? unitData.unitName : "이름 값이 없습니다!";
+        name = unitData && unitData.unitName != "" ? unitData.unitName : "이름 값이 없습니다!";
     }
 }
 
@@ -32,7 +32,7 @@ public class ItemList
 
     public void Validate()
     {
-        name = itemData.itemName != "" ? itemData.itemName : "이름 값이 없습니다!";
+        name = itemData && itemData.itemName != "" ? itemData.itemName : "이름 값이 없습니다!";
     }
 }
 
@@ -46,7 +46,7 @@ public class StageList
 
     public void Validate()
     {
-        name = stageData.stageName != "" ? stageData.stageName : "이름 값이 없습니다!";
+        name = stageData && stageData.stageName != "" ? stageData.stageName : "이름 값이 없습니다!";
     }
 }
 
@@ -60,7 +60,7 @@ public class ChallengeList
 
     public void Validate()
     {
-        name = challengeData.challengeName != "" ? challengeData.challengeName : "이름 값이 없습니다!";
+        name = challengeData && challengeData.challengeName != "" ? challengeData.challengeName : "이름 값이 없습니다!";
     }
 }
 

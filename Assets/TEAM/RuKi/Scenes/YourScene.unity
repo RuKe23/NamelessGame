@@ -337,64 +337,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 1440315017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a76a5bfe943e2340875d282a9b27112, type: 3}
+  m_Script: {fileID: 11500000, guid: 8969ef1a7169d0a4a8d601c575f0311d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameData:
     organic: 0
     coin: 0
     unitList:
-    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
+    - name: "\uB354\uBBF8"
       level: 0
       unlock: 0
-      unitData: {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
-    - name: "\uB354\uBBF8 \uCE90\uB9AD\uD130"
+      unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
+    - name: "\uB354\uBBF8"
       level: 0
       unlock: 0
-      unitData: {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
-    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
+      unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
+    - name: "\uB354\uBBF8"
       level: 0
       unlock: 0
-      unitData: {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
+      unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
     itemList:
-    - name: "\uD589\uBCF5\uD55C \uCE74\uC6B0\uBCF4\uC774"
+    - name: "\uC544\uC774\uD15C"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
-    - name: "\uD589\uBCF5\uD55C \uCE74\uC6B0\uBCF4\uC774"
+    - name: "\uC544\uC774\uD15C"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
-    - name: "\uD589\uBCF5\uD55C \uCE74\uC6B0\uBCF4\uC774"
+    - name: "\uC544\uC774\uD15C"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
     stageList:
-    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
+    - name: "\uC2A4\uD14C\uC774\uC9C0"
       clear: 0
       stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
-    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
+    - name: "\uC2A4\uD14C\uC774\uC9C0"
       clear: 0
       stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
-    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
+    - name: "\uC2A4\uD14C\uC774\uC9C0"
       clear: 0
       stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
     challengeList:
-    - name: "\uAC15\uB825\uD55C \uD55C\uBC29"
+    - name: "\uCC4C\uB9B0\uC9C0"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uAC15\uB825\uD55C \uD55C\uBC29"
+    - name: "\uCC4C\uB9B0\uC9C0"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uAC15\uB825\uD55C \uD55C\uBC29"
+    - name: "\uCC4C\uB9B0\uC9C0"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    combatUnit:
-    - {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
-    - {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
-    - {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
-    - {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
-    - {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
+    combatUnit: []
     storyProgress: 0
 --- !u!4 &1440315019
 Transform:

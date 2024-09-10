@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2f5e9d34ae80184b8dd130a0aae1de8, type: 3}
+  m_Script: {fileID: 11500000, guid: f3788ff31d9bf3e4dbd671b43b1ad133, type: 3}
   m_Name: Stage 0
   m_EditorClassIdentifier: 
   stageId: 0
-  stageName: 
+  stageName: "\uC2A4\uD14C\uC774\uC9C0"
   stageDifficulty: 0
   stageDesc: 
   specialGimmick: 
@@ -22,6 +22,6 @@ MonoBehaviour:
   rewardOrganic: 0
   rewardCoin: 0
   rewardItem: 
-  unlockUnit: {fileID: 11400000, guid: 158f3b14ced0baf4b859696c27979d8f, type: 2}
+  unlockUnit: {fileID: 0}
   stagePosition: {x: 0, y: 0}
-  stageScene: {fileID: 102900000, guid: b7a70819b1886f54d9e4f1cd36914a2e, type: 3}
+  stageScene: {fileID: 0}
