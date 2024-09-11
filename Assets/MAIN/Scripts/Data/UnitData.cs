@@ -5,6 +5,12 @@ using UnityEditor.Animations;
 using UnityEditor.SearchService;
 using UnityEngine;
 
+[System.Serializable]
+public class SkillLevel
+{
+    public float[] Value;
+}
+
 [CreateAssetMenu(fileName = "Unit", menuName = "Scriptble Object/UnitData")]
 public class UnitData : ScriptableObject
 {
@@ -22,7 +28,7 @@ public class UnitData : ScriptableObject
     
     [Header("Level Data")]
     public int[] levelUpMoney       = new int[5];
-    public float[] skillLevel       = new float[5];
+    public SkillLevel[] skillLevel  = new SkillLevel[5];
     public int[] powerLevel         = new int[5];
     public int[] heartLevel         = new int[5];
     public int[] speedLevel         = new int[5];

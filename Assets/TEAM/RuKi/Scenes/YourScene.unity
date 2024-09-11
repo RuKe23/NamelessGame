@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 658710299}
   - component: {fileID: 658710298}
   - component: {fileID: 658710300}
+  - component: {fileID: 658710301}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -311,6 +312,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecf6f168469438498ba7fe457c65292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &658710301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658710297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2436c926b6d3796448b5b66ac007d435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScript: {fileID: 0}
 --- !u!1 &1440315017
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,15 +371,15 @@ MonoBehaviour:
       unlock: 0
       unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
     itemList:
-    - name: "\uC544\uC774\uD15C"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
-    - name: "\uC544\uC774\uD15C"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
-    - name: "\uC544\uC774\uD15C"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       level: 0
       progress: 0
       itemData: {fileID: 11400000, guid: b141bed2b5af08347853794c911b4f23, type: 2}
@@ -380,13 +394,13 @@ MonoBehaviour:
       clear: 0
       stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
     challengeList:
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
     combatUnit: []

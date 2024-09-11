@@ -20,11 +20,11 @@ MonoBehaviour:
   unlockItem: 
   levelUpMoney: 0000000000000000000000000000000000000000
   skillLevel:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
   powerLevel: 0000000000000000000000000000000000000000
   heartLevel: 0000000000000000000000000000000000000000
   speedLevel: 0000000000000000000000000000000000000000

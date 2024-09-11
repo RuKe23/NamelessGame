@@ -8,7 +8,7 @@ public class testCode : MonoBehaviour
     void Start()
     {
         DataManager.Instance.gameData.coin += 10;
-        Debug.Log(DataManager.Instance.gameData.unitList[0].unitData.unitName);
+        //Debug.Log(DataManager.Instance.gameData.unitList[0].unitData.skillLevel[0].Value[1]);
     }
 
     // Update is called once per frame

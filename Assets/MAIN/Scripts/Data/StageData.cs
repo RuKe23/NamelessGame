@@ -17,7 +17,7 @@ public class StageData : ScriptableObject
     public string stageDesc;
     [TextArea]
     public string specialGimmick;
-    public string gimmickValue;
+    public float[] gimmickValue;
 
     [Header("Enemy")]
     public UnitData[] appearsEnemy;
