@@ -8,7 +8,7 @@ public class ShopMove : MonoBehaviour
     
     public void SceneChange()
     {
-        SceneManager.LoadScene("Setting");
+        SceneManager.LoadScene("Shop1");
     }
     
 }
