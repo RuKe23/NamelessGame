@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "NamelessGame.sln"
+    "dotnet.defaultSolution": "NamelessGame.sln",
+    "dotnet.codeLens.enableReferencesCodeLens": false
 }
