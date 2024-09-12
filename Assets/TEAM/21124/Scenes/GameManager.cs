@@ -8,6 +8,6 @@ public class GameManager : MonoBehaviour
     public PoolManager pool;
     void Awake()
     {
-        
+        instance = this;
     }
 }
