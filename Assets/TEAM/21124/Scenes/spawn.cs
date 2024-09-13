@@ -7,6 +7,8 @@ public class spawn : MonoBehaviour
 {
     public Transform[] spawnPoint;
 
+    public int spawnunit; 
+
     float timer;
 
     void Awake()
@@ -29,6 +31,6 @@ public class spawn : MonoBehaviour
 
     void Spawn()
     {
-        GameManager.instance.pool.Get(0);
+        GameManager.instance.pool.Get(spawnunit);
     }
 }
