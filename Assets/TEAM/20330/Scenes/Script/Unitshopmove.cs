@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ShopMove : MonoBehaviour
+public class Unitshopmove : MonoBehaviour
 {
-    
     public void SceneChange()
     {
         SceneManager.LoadScene("Unitshop");
     }
-    
 }
