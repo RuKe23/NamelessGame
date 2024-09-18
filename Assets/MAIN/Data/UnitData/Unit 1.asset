@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
+  m_Name: Unit 1
+  m_EditorClassIdentifier: 
+  unitId: 1
+  unitName: "\uB354\uBBF8"
+  unitIcon: {fileID: 0}
+  unitDesc: 
+  unitSkill: 
+  unlockItem: 
+  levelUpMoney: 0000000000000000000000000000000000000000
+  skillLevel:
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  powerLevel: 0000000000000000000000000000000000000000
+  heartLevel: 0000000000000000000000000000000000000000
+  speedLevel: 0000000000000000000000000000000000000000
+  spawnTimeLevel: 0000000000000000000000000000000000000000
+  skillCooldownLevel: 0000000000000000000000000000000000000000
+  animatorController: {fileID: 0}
