@@ -27,6 +27,7 @@ public class unitSpawn : MonoBehaviour
 
     void Spawn()
     {
-        GameManager.instance.pool.Get(spawnunit);
+        GameObject unit = GameManager.instance.pool.Get(spawnunit);
+        unit.transform.position = spawnPoint[1].position;
     }
 }
