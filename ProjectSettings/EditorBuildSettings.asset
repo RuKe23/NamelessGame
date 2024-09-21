@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TEAM/20330/Scenes/Setting.unity
     guid: a19dc751d8dbbde4b86e844cd78f0e38
+  - enabled: 1
+    path: Assets/TEAM/20330/Scenes/Unitshop.unity
+    guid: 6e787aa1cda5abd4c841a16685a09018
+  - enabled: 1
+    path: Assets/TEAM/20330/Scenes/Itemshop.unity
+    guid: a2dbd78774531f74f944d63869bea772
   m_configObjects: {}
