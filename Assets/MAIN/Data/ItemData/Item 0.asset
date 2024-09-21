@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Item 0
   m_EditorClassIdentifier: 
   itemId: 0
-  itemName: "\uC544\uC774\uD15C"
+  itemName: "\uC5F0\uAE08\uC220\uC0AC\uC758 \uCC45"
   itemIcon: {fileID: 0}
-  itemDesc: 
-  itemEffect: 
-  unlockRequirement: 
-  unlockValue: 0
-  levelUpMoney: 0000000000000000000000000000000000000000
+  itemDesc: "\uD574\uC548\uB3C4\uC2DC \uC5D0\uBC84\uB518\uC5D0\uC11C \uC5BB\uC740
+    \uB0A1\uC740 \uC5F0\uAE08\uC220\uC0AC\uC758 \uCC45.\uD398\uC774\uC9C0\uAC00 \uC77C\uBD80
+    \uCC22\uC5B4\uC838 \uC788\uB2E4."
+  itemEffect: "\uBCF5\uC81C\uC778\uAC04\uC758 \uC7AC\uC18C\uD658 \uCFE8\uD0C0\uC784\uC774
+    {0}\uCD08 \uAC10\uC18C\uD55C\uB2E4."
+  unlockRequirement: "\uC5D0\uBC84\uB518 \uC2A4\uD14C\uC774\uC9C0\uB97C \uD074\uB9AC\uC5B4\uD558\uAE30."
+  unlockValue: 1
+  levelUpMoney: 000000000c0000000f0000001200000014000000
   abilityValues:
   - 0
   - 0
