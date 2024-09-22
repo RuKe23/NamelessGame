@@ -7,7 +7,10 @@ public class UnitSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform spawnPoint;
+
     public int spawnunit;
+
+    float SubSpawnTimeLevel;
 
     void Start()
     {
