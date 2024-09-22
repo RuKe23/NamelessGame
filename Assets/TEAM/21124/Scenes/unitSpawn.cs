@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class UnitSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform[] spawnPoint;
+    public Transform spawnPoint;
     public int spawnunit;
 
-    void Awake()
+    void Start()
     {
-        spawnPoint = GetComponentsInChildren<Transform>();
+        GetComponent<Button>().onClick.AddListener(OnClick);
     }
 
     public void OnClick() 
@@ -21,7 +21,8 @@ public class UnitSpawn : MonoBehaviour
 
     void Spawn()
     {
-        SubGameManager.instance.pool.Get(spawnunit);
+        GameObject unit = SubGameManager.instance.pool.Get(spawnunit);
+        unit.transform.position = spawnPoint.position;
     }
 }
 // .. 클릭하면 유닛정보
