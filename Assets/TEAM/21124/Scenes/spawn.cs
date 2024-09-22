@@ -5,16 +5,11 @@ using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
-    public Transform[] spawnPoint;
+    public Transform spawnPoint;
 
     public int spawnunit; 
 
     float timer;
-
-    void Awake()
-    {
-        spawnPoint = GetComponentsInChildren<Transform>();
-    }
 
     void Update()
     {
@@ -23,7 +18,7 @@ public class spawn : MonoBehaviour
         // .. 아군, 적군에 따라 생성 위치 다르게 조절
         timer += Time.deltaTime;
 
-        if (timer > 0.2f) {
+        if (timer > 1f) {
             timer = 0;
             Spawn();
         }
@@ -31,6 +26,7 @@ public class spawn : MonoBehaviour
 
     void Spawn()
     {
-        SubGameManager.instance.pool.Get(spawnunit);
+        GameObject unit = SubGameManager.instance.pool.Get(spawnunit);
+        unit.transform.position = spawnPoint.position;
     }
 }
