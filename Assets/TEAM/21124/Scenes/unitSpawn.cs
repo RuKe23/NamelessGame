@@ -21,7 +21,7 @@ public class UnitSpawn : MonoBehaviour
 
     void Spawn()
     {
-        GameManager.instance.pool.Get(spawnunit);
+        SubGameManager.instance.pool.Get(spawnunit);
     }
 }
 // .. 클릭하면 유닛정보

@@ -31,6 +31,6 @@ public class spawn : MonoBehaviour
 
     void Spawn()
     {
-        GameManager.instance.pool.Get(spawnunit);
+        SubGameManager.instance.pool.Get(spawnunit);
     }
 }
