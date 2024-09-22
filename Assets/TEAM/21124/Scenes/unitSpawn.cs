@@ -25,4 +25,3 @@ public class UnitSpawn : MonoBehaviour
         unit.transform.position = spawnPoint.position;
     }
 }
-// .. 클릭하면 유닛정보
