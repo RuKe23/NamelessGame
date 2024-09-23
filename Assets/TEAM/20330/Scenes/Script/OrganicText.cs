@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CoinText : MonoBehaviour
+public class OrganicText : MonoBehaviour
 {
     public Text text;
 
@@ -16,6 +16,6 @@ public class CoinText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text=DataManager.Instance.gameData.coin.ToString();
+        text.text=DataManager.Instance.gameData.organic.ToString();
     }
 }
