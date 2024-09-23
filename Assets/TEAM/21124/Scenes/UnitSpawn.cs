@@ -10,7 +10,7 @@ public class UnitSpawn : MonoBehaviour
 
     public int spawnunit;
 
-    public float SubSpawnTimeLevel;
+    float SubSpawnTimeLevel;
 
     bool notSpawn = false;
 
@@ -19,6 +19,8 @@ public class UnitSpawn : MonoBehaviour
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(OnClick);
+
+        SubSpawnTimeLevel = DataManager.Instance.gameData.combatUnit[0].unitData.spawnTimeLevel[DataManager.Instance.gameData.combatUnit[0].level];
     }
 
     public void OnClick() 
