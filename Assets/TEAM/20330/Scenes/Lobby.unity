@@ -1105,8 +1105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameData:
-    organic: 10000
-    coin: 100
+    organic: 0
+    coin: 0
     unitList: []
     itemList: []
     stageList: []
