@@ -78,7 +78,7 @@ public class GameData
     public ChallengeList[] challengeList;
 
     [Header("etc")]
-    public UnitData[] combatUnit;
+    public UnitList[] combatUnit;
     public int storyProgress;
 }
 
