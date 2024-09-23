@@ -13,9 +13,6 @@ public class spawn : MonoBehaviour
 
     void Update()
     {
-        // .. 버튼 감지에 따른 프리펩 생성
-        // .. 아군 생성 로직은 구상됨, but 적 생성은 아직 모름
-        // .. 아군, 적군에 따라 생성 위치 다르게 조절
         timer += Time.deltaTime;
 
         if (timer > 1f) {

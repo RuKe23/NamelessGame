@@ -10,7 +10,11 @@ public class UnitSpawn : MonoBehaviour
 
     public int spawnunit;
 
-    float SubSpawnTimeLevel;
+    public float SubSpawnTimeLevel;
+
+    bool notSpawn = false;
+
+    float timer;
 
     void Start()
     {
@@ -19,12 +23,27 @@ public class UnitSpawn : MonoBehaviour
 
     public void OnClick() 
     {
-        Spawn();
+        if (!notSpawn) {
+            Spawn();
+            notSpawn = true;
+        }
     }
 
     void Spawn()
     {
         GameObject unit = SubGameManager.instance.pool.Get(spawnunit);
         unit.transform.position = spawnPoint.position;
+    }
+
+    void Update() 
+    {
+        if (notSpawn) {
+            timer += Time.deltaTime;
+
+            if (timer > SubSpawnTimeLevel) {
+                timer = 0;
+                notSpawn = false;
+            }
+        }
     }
 }
