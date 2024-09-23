@@ -10,4 +10,5 @@ public class SubGameManager : MonoBehaviour
     {
         instance = this;
     }
+
 }

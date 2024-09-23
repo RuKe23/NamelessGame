@@ -176,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1129882868}
   spawnunit: 0
+  SubSpawnTimeLevel: 10
 --- !u!114 &49380266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1129882868}
   spawnunit: 3
+  SubSpawnTimeLevel: 1
 --- !u!114 &415211246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1129882868}
   spawnunit: 2
+  SubSpawnTimeLevel: 6
 --- !u!114 &555759765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,6 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1129882868}
   spawnunit: 1
+  SubSpawnTimeLevel: 5
 --- !u!114 &1051611000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1129882868}
   spawnunit: 4
+  SubSpawnTimeLevel: 60
 --- !u!114 &1382041648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,7 +1735,7 @@ Transform:
   m_GameObject: {fileID: 1652653154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2559022, y: 0.3427915, z: 0.2957529}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
