@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: Unit 1
   m_EditorClassIdentifier: 
   unitId: 1
-  unitName: "\uB354\uBBF8"
+  unitName: "\uAD81\uC218"
   unitIcon: {fileID: 0}
-  unitDesc: 
-  unitSkill: 
-  unlockItem: 
+  unitDesc: "\uB9C8\uC744 \uB358\uB514\uC5D0\uC11C \uB9CC\uB09C \uB0A9\uCE58\uB41C
+    \uC544\uC774\uB4E4\uC911 \uD55C\uBA85\uC778,OOO\uC758 \uD615.\uC11D\uAD81\uC744
+    \uB2E4\uB8E8\uB294\uB370 \uB2A5\uD558\uB2E4."
+  unitSkill: "(\uD328\uC2DC\uBE0C)\n{0}\uCD08 \uB9C8\uB2E4 \uC790\uC2E0\uC758 \uACF5\uACA9\uB825\uC758
+    {0}% \uB9CC\uD07C\uC758 \uACF5\uACA9\uB825\uC758 \uD654\uC0B4\uC744 \uC3DC\uB2E4"
+  unlockItem: "\uC11D\uAD81"
   levelUpMoney: 0000000000000000000000000000000000000000
   skillLevel:
   - Value: []
