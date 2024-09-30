@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
-    public Transform spawnPoint;
-
-    public int spawnunit; 
-
+    public Transform spawnPoint; 
+    int spawnunit; 
     float timer;
+    int level;
 
     void Update()
     {
         timer += Time.deltaTime;
+        level = Mathf.FloorToInt(SubGameManager.instance.gameTime / 10f);
 
-        if (timer > 1f) {
+        if (timer > 0.5f) {
             timer = 0;
             Spawn();
         }
