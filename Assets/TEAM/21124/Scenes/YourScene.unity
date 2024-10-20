@@ -348,7 +348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 67936733}
-  spawnunit: 5
 --- !u!1 &150718836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b430355251fe7f47b43fac150295ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTime: 0
+  maxGameTime: 300
   pool: {fileID: 1652653155}
 --- !u!4 &1315461485
 Transform:
