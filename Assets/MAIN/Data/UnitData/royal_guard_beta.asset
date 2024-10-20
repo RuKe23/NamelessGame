@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
+  m_Name: royal_guard_beta
+  m_EditorClassIdentifier: 
+  unitId: 0
+  unitName: "\uC655\uC2E4\uBCD1"
+  unitIcon: {fileID: 880727203, guid: 1fb0eecb74a471946bbc44985cd63908, type: 3}
+  unitDesc: 
+  unitSkill: 
+  unlockItem: 
+  levelUpMoney: 00000000
+  skillLevel:
+  - Value: []
+  powerLevel: 96000000
+  heartLevel: 58020000
+  speedLevel: 04000000
+  spawnTime: 0
+  skillCooldown: 0
+  attackRange: 3
+  rangedAttack: 0
+  animatorController: {fileID: 22100000, guid: 6003c5598b3e48349b04e547f08bceae, type: 2}
+  spawnCost: 102

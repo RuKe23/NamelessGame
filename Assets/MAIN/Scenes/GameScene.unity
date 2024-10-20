@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
   poolManager: {fileID: 1971607971}
-  coin: 500
+  coin: 100
   coinText: {fileID: 857277351}
 --- !u!1 &300670577
 GameObject:
@@ -417,10 +417,22 @@ MonoBehaviour:
       level: 1
       unlock: 1
       unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
-    - name: "\uD14C\uC2A4\uD2B8"
+    - name: "\uC5B4\uC314\uC2E0"
       level: 0
       unlock: 0
-      unitData: {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
+      unitData: {fileID: 11400000, guid: b6127e2e591965743a39e27704dc26a5, type: 2}
+    - name: "\uB300\uAC80\uC0AC"
+      level: 0
+      unlock: 0
+      unitData: {fileID: 11400000, guid: 6103f25ea936bb647aa69ebf8f57567d, type: 2}
+    - name: "\uC655\uC2E4\uC815\uC608\uBCD1"
+      level: 0
+      unlock: 0
+      unitData: {fileID: 11400000, guid: e29432388d0b58c42a4a95748769eede, type: 2}
+    - name: "\uC655\uC2E4\uBCD1"
+      level: 0
+      unlock: 0
+      unitData: {fileID: 11400000, guid: e3473e00c194f5d4aac424390282a998, type: 2}
     itemList:
     - name: "\uC5F0\uAE08\uC220\uC0AC\uC758 \uCC45"
       level: 2
@@ -464,17 +476,17 @@ MonoBehaviour:
       unlock: 1
       unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
     - name: 
-      level: 1
+      level: 3
       unlock: 1
-      unitData: {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
+      unitData: {fileID: 11400000, guid: b6127e2e591965743a39e27704dc26a5, type: 2}
     - name: 
-      level: 1
+      level: 4
       unlock: 1
-      unitData: {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
+      unitData: {fileID: 11400000, guid: 6103f25ea936bb647aa69ebf8f57567d, type: 2}
     - name: 
       level: 2
       unlock: 1
-      unitData: {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
+      unitData: {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
     storyProgress: 1
 --- !u!4 &372337165
 Transform:
@@ -962,6 +974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4103b65657b1db4faad4ca4cb4ce439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endSetTime: 300
+  delayMax: 10
+  winding: 30
 --- !u!4 &1100418921
 Transform:
   m_ObjectHideFlags: 0

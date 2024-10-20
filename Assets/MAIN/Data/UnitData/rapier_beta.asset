@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
+  m_Name: rapier_beta
+  m_EditorClassIdentifier: 
+  unitId: 4
+  unitName: "\uC655\uC2E4\uC815\uC608\uBCD1"
+  unitIcon: {fileID: -125021819, guid: 67361d2232ac97d45931a26bea790b55, type: 3}
+  unitDesc: 
+  unitSkill: "\uC2A4\uD0AC \uC0AC\uC6A9\uC2DC \uCF54\uC2A4\uD2B8\uB97C {0} \uB9CC\uD07C
+    \uC5BB\uC74C\n\n(\uD328\uC2DC\uBE0C)\n\uC18C\uD658 \uC0C1\uD0DC\uC778 \uACBD\uC6B0
+    \uC720\uAE30\uBB3C \uD68D\uB4DD\uB7C9 +{0}%"
+  unlockItem: 
+  levelUpMoney: ae010000
+  skillLevel:
+  - Value: []
+  powerLevel: 84030000
+  heartLevel: 6e140000
+  speedLevel: 0f000000
+  spawnTime: 0
+  skillCooldown: 0
+  attackRange: 1
+  rangedAttack: 0
+  animatorController: {fileID: 22100000, guid: 13a1745a70599e448a0569f9223a773e, type: 2}
+  spawnCost: 430

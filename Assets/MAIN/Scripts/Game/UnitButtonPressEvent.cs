@@ -48,7 +48,6 @@ public class UnitButtonPressEvent : MonoBehaviour
             spawnUnitScript.layerMask = LayerMask.GetMask("EnemyUnit");
             
             spawnUnitScript.rayVector = Vector2.left;
-            spawnUnitScript.rayHit = Physics2D.Raycast(spawnPosition, spawnUnitScript.rayVector, unitList.unitData.attackRange, spawnUnitScript.layerMask);
             spawnUnitScript.heart = unitList.unitData.heartLevel[unitList.level];
 
             spawnUnit.GetComponent<Animator>().runtimeAnimatorController = unitList.unitData.animatorController;

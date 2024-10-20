@@ -8,7 +8,7 @@ public class UnitScript : MonoBehaviour
     public int UnitLevel;
 
     [HideInInspector]
-    public RaycastHit2D rayHit;
+    public RaycastHit2D[] rayHits;
     [HideInInspector]
     public Vector2 rayVector;
     [HideInInspector]
@@ -20,6 +20,7 @@ public class UnitScript : MonoBehaviour
     public State state;
 
     public int heart;
+    public bool rangedAttack;
 
     Animator animator;
     Collider2D coll;
@@ -37,6 +38,7 @@ public class UnitScript : MonoBehaviour
     void OnEnable()
     {
         state = State.walk;
+        rayHits = new RaycastHit2D[1];
     }
 
     // Update is called once per frames
@@ -46,8 +48,9 @@ public class UnitScript : MonoBehaviour
         
         if(state == State.walk)
         {
-            rayHit = Physics2D.Raycast(transform.position, rayVector, unitData.attackRange, layerMask);
-            if(rayHit) 
+            if(!rangedAttack) rayHits[0] = Physics2D.Raycast(transform.position, rayVector, unitData.attackRange, layerMask);
+            else rayHits = Physics2D.RaycastAll(transform.position, rayVector, unitData.attackRange, layerMask);
+            if(rayHits[0]) 
             {
                 if(!animator.GetBool("attack")) animator.SetBool("attack", true);
             }
@@ -60,9 +63,12 @@ public class UnitScript : MonoBehaviour
     }
     void AttackEvent()
     {
-        unitScript = rayHit.transform.gameObject.GetComponent<UnitScript>();
-        unitScript.heart -= unitData.powerLevel[UnitLevel];
-        unitScript.Hit();
+        foreach (RaycastHit2D rayHit in rayHits)
+        {
+            unitScript = rayHit.transform.gameObject.GetComponent<UnitScript>();
+            unitScript.heart -= unitData.powerLevel[UnitLevel];
+            unitScript.Hit();
+        }
     }
 
     IEnumerator Dead()
@@ -92,9 +98,6 @@ public class UnitScript : MonoBehaviour
         {
             if(state != State.dead)
             {
-                StopCoroutine("walk");
-                StopCoroutine("attack");
-
                 StartCoroutine("Dead");
             }
         }

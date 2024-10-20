@@ -51,7 +51,6 @@ public class EnemyAI : MonoBehaviour
         spawnUnitScript.layerMask = LayerMask.GetMask("FriendlyUnit");
         
         spawnUnitScript.rayVector = Vector2.right;
-        spawnUnitScript.rayHit = Physics2D.Raycast(spawnPosition, spawnUnitScript.rayVector, unitData.attackRange, spawnUnitScript.layerMask);
         spawnUnitScript.heart = unitData.heartLevel[0];
 
         spawnUnit.GetComponent<Animator>().runtimeAnimatorController = unitData.animatorController;

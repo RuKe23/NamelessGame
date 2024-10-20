@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
+  m_Name: archer_beta
+  m_EditorClassIdentifier: 
+  unitId: 1
+  unitName: "\uAD81\uC218"
+  unitIcon: {fileID: -593440636, guid: 001c9a576c4a7104fbf2b5ebeba52d1c, type: 3}
+  unitDesc: "\uC11D\uAD81\uC744 \uB2E4\uB8E8\uB294 \uBCF5\uC81C\uC778\uAC04."
+  unitSkill: "(\uD328\uC2DC\uBE0C)\n{0}\uCD08 \uB9C8\uB2E4 \uC790\uC2E0\uC758 \uACF5\uACA9\uB825\uC758
+    {0}% \uB9CC\uD07C\uC758 \uACF5\uACA9\uB825\uC758 \uD654\uC0B4\uC744 \uC3DC\uB2E4"
+  unlockItem: "\uC11D\uAD81"
+  levelUpMoney: 5e010000b6030000dc0500000807000034080000
+  skillLevel:
+  - Value:
+    - 12
+    - 180
+  - Value:
+    - 12
+    - 195
+  - Value:
+    - 10
+    - 0
+  - Value:
+    - 0
+    - 0
+  - Value:
+    - 0
+    - 0
+  powerLevel: 90010000a4010000ae010000c2010000f4010000
+  heartLevel: e80300004c040000e20400007805000040060000
+  speedLevel: 070000000800000008000000090000000a000000
+  spawnTime: 0.01
+  skillCooldown: 9
+  attackRange: 3
+  rangedAttack: 0
+  animatorController: {fileID: 22100000, guid: c22a22dcf9c9fa642ba56f98e2d98efc, type: 2}
+  spawnCost: 95

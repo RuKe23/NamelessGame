@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEditor.SearchService;
@@ -35,14 +36,13 @@ public class UnitData : ScriptableObject
 
     public float spawnTime;
     public float skillCooldown;
-    public float attackSpeed;
     public float attackRange;
+    public bool rangedAttack;
     
     [Header("Animation")]
-    public AnimatorController animatorController;
+    public AnimatorOverrideController animatorController;
 
     [Header("In Game")]
-    public float attackTime;
     public int spawnCost;
 }
 
