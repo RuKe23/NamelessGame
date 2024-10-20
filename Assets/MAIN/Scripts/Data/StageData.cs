@@ -28,8 +28,11 @@ public class StageData : ScriptableObject
     public string rewardItem;
     public UnitData unlockUnit;
 
+    [Header("In Game")]
+    public float backgroundLength;
+
     [Header("etc")]
     public Vector2 stagePosition;
-    public SceneAsset stageScene;
+    //public SceneAsset stageScene;
     
 }

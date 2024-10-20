@@ -972,13 +972,13 @@ MonoBehaviour:
       clear: 0
       stageData: {fileID: 11400000, guid: 961105d9cdd19ed40bcf82e25529c74f, type: 2}
     challengeList:
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
-    - name: "\uCC4C\uB9B0\uC9C0"
+    - name: "\uC774\uB984 \uAC12\uC774 \uC5C6\uC2B5\uB2C8\uB2E4!"
       progress: 0
       challengeData: {fileID: 11400000, guid: 1d304200c08d4c24bad521124a039830, type: 2}
     combatUnit: []

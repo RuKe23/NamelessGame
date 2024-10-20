@@ -26,16 +26,23 @@ public class UnitData : ScriptableObject
     public string unitSkill;
     public string unlockItem;
     
-    [Header("Level Data")]
+    [Header("Main Data")]
     public int[] levelUpMoney       = new int[5];
     public SkillLevel[] skillLevel  = new SkillLevel[5];
     public int[] powerLevel         = new int[5];
     public int[] heartLevel         = new int[5];
     public int[] speedLevel         = new int[5];
-    public int[] spawnTimeLevel     = new int[5];
-    public int[] skillCooldownLevel = new int[5];
+
+    public float spawnTime;
+    public float skillCooldown;
+    public float attackSpeed;
+    public float attackRange;
     
     [Header("Animation")]
     public AnimatorController animatorController;
+
+    [Header("In Game")]
+    public float attackTime;
+    public int spawnCost;
 }
 

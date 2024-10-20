@@ -20,14 +20,18 @@ MonoBehaviour:
   unlockItem: 
   levelUpMoney: 0000000000000000000000000000000000000000
   skillLevel:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  powerLevel: 0000000000000000000000000000000000000000
-  heartLevel: 0000000000000000000000000000000000000000
-  speedLevel: 0000000000000000000000000000000000000000
-  spawnTimeLevel: 0000000000000000000000000000000000000000
-  skillCooldownLevel: 0000000000000000000000000000000000000000
-  animatorController: {fileID: 0}
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  powerLevel: eb000000f0000000ff000000220100003b010000
+  heartLevel: d6060000ef060000090b0000220b00003b0b0000
+  speedLevel: 0100000002000000030000000400000005000000
+  spawnTime: 1.5
+  skillCooldown: 4
+  attackSpeed: 1.2
+  attackRange: 1
+  animatorController: {fileID: 9100000, guid: 78746fb31af942d4eac78ec1f70c755a, type: 2}
+  attackTime: 1
+  spawnCost: 32

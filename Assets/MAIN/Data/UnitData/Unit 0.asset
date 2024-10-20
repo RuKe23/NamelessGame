@@ -30,8 +30,12 @@ MonoBehaviour:
   - Value: []
   - Value: []
   powerLevel: eb000000f0000000ff000000220100003b010000
-  heartLevel: ee0200000703000039030000520300006b030000
-  speedLevel: 0000000000000000000000000000000000000000
-  spawnTimeLevel: 05000000340000002f0000002800000023000000
-  skillCooldownLevel: 2d0000002a00000028000000230000001e000000
-  animatorController: {fileID: 0}
+  heartLevel: d6060000ef060000090b0000220b00003b0b0000
+  speedLevel: 0100000002000000030000000400000005000000
+  spawnTime: 21
+  skillCooldown: 5.4
+  attackSpeed: 2
+  attackRange: 1.5
+  animatorController: {fileID: 9100000, guid: 78746fb31af942d4eac78ec1f70c755a, type: 2}
+  attackTime: 1.5
+  spawnCost: 12

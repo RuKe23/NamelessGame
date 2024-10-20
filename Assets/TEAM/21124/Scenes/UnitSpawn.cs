@@ -19,7 +19,7 @@ public class UnitSpawn : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(OnClick);
 
-        SubSpawnTimeLevel = DataManager.Instance.gameData.combatUnit[0].unitData.spawnTimeLevel[DataManager.Instance.gameData.combatUnit[0].level];
+        SubSpawnTimeLevel = DataManager.Instance.gameData.combatUnit[0].unitData.spawnTime;
     }
 
     public void OnClick() 

@@ -17,11 +17,14 @@ MonoBehaviour:
   stageDifficulty: 0
   stageDesc: 
   specialGimmick: 
-  gimmickValue: 
-  appearsEnemy: []
+  gimmickValue: []
+  appearsEnemy:
+  - {fileID: 11400000, guid: 678f5dba052f98f44bf6eb8cc675e6d2, type: 2}
+  - {fileID: 11400000, guid: 484fae98607e7bf4689d3ed5a85d31a0, type: 2}
+  - {fileID: 11400000, guid: 607fdc9812f93a84ab2cb36675df7865, type: 2}
   rewardOrganic: 0
   rewardCoin: 0
   rewardItem: 
   unlockUnit: {fileID: 0}
+  backgroundLength: 10
   stagePosition: {x: 0, y: 0}
-  stageScene: {fileID: 0}
