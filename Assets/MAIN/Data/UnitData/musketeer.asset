@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
+  m_Name: musketeer
+  m_EditorClassIdentifier: 
+  unitId: 2
+  unitName: "\uBA38\uC2A4\uD0B7\uBCD1"
+  unitIcon: {fileID: -614340665, guid: a3e802ffccde21c4d838a3bee397b2b8, type: 3}
+  unitDesc: 
+  unitSkill: 
+  unlockItem: 
+  levelUpMoney: 00000000bc02000014050000340800001c0c0000
+  skillLevel:
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  - Value: []
+  powerLevel: 8a020000bc020000ee0200002003000052030000
+  heartLevel: 200300002a030000340300005203000084030000
+  speedLevel: 0400000004000000050000000600000007000000
+  spawnTime: 9
+  skillCooldown: 5.4
+  attackRange: 2.5
+  rangedAttack: 1
+  animatorController: {fileID: 22100000, guid: 7b347fd979cf7dc45bc8ed36315d8841, type: 2}
+  spawnCost: 210

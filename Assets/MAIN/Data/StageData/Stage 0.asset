@@ -19,8 +19,7 @@ MonoBehaviour:
   specialGimmick: 
   gimmickValue: []
   appearsEnemy:
-  - {fileID: 11400000, guid: e3473e00c194f5d4aac424390282a998, type: 2}
-  - {fileID: 11400000, guid: e3473e00c194f5d4aac424390282a998, type: 2}
+  - {fileID: 11400000, guid: 96b245b3311c9bd4987ac70d62819f78, type: 2}
   - {fileID: 11400000, guid: e3473e00c194f5d4aac424390282a998, type: 2}
   - {fileID: 11400000, guid: e29432388d0b58c42a4a95748769eede, type: 2}
   rewardOrganic: 0
@@ -28,4 +27,5 @@ MonoBehaviour:
   rewardItem: 
   unlockUnit: {fileID: 0}
   backgroundLength: 15
+  EnemyPlayerHP: 10000
   stagePosition: {x: 0, y: 0}

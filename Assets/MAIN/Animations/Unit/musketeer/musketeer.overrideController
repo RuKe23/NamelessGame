@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: musketeer
+  m_Controller: {fileID: 9100000, guid: 78746fb31af942d4eac78ec1f70c755a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: efb0866b226d54c49a02a1cb908228f2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b2bb26e9188d5fc45855ae797dcdfd6a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6b57dfa4a0b913848b1998a1126a871c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e572b166ca64d464785e161a9769c5e0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8f5afe61276eb2a4d8cdb450702ea338, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7b3991dc532245b42a1a367803196d66, type: 2}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class UnitScript : MonoBehaviour
     public Vector2 rayVector;
     [HideInInspector]
     public UnitScript unitScript;
+    [HideInInspector]
+    public PlayerScript playerScript;
 
     [HideInInspector]
     public enum State {walk, attack, dead}
@@ -65,9 +68,21 @@ public class UnitScript : MonoBehaviour
     {
         foreach (RaycastHit2D rayHit in rayHits)
         {
-            unitScript = rayHit.transform.gameObject.GetComponent<UnitScript>();
-            unitScript.heart -= unitData.powerLevel[UnitLevel];
-            unitScript.Hit();
+            if(rayHit)
+            {
+                try
+                {
+                    unitScript = rayHit.transform.gameObject.GetComponent<UnitScript>();
+                    unitScript.heart -= unitData.powerLevel[UnitLevel];
+                    unitScript.Hit();
+                }
+                catch (NullReferenceException)
+                {
+                    playerScript = rayHit.transform.gameObject.GetComponent<PlayerScript>();
+                    GameManager.instance.PlayerHPs[Convert.ToInt32(!playerScript.MyPlayer)] -= unitData.powerLevel[UnitLevel];
+                    playerScript.Hit();
+                }
+            }
         }
     }
 

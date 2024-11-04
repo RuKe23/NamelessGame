@@ -39,7 +39,7 @@ MonoBehaviour:
   powerLevel: 90010000a4010000ae010000c2010000f4010000
   heartLevel: e80300004c040000e20400007805000040060000
   speedLevel: 070000000800000008000000090000000a000000
-  spawnTime: 0.01
+  spawnTime: 5
   skillCooldown: 9
   attackRange: 3
   rangedAttack: 0

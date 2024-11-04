@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 195a1f8129c599c43abd44cbc240930f, type: 3}
-  m_Name: royal_guard_beta
+  m_Name: zombie_beta
   m_EditorClassIdentifier: 
   unitId: 0
-  unitName: "\uC655\uC2E4\uBCD1"
-  unitIcon: {fileID: 880727203, guid: 1fb0eecb74a471946bbc44985cd63908, type: 3}
+  unitName: "\uC880\uBE44"
+  unitIcon: {fileID: 64683265, guid: f6dea5ff8b476f946a1c5e367caa7efc, type: 3}
   unitDesc: 
   unitSkill: 
   unlockItem: 
   levelUpMoney: 00000000
   skillLevel:
   - Value: []
-  powerLevel: e1000000
-  heartLevel: 4c040000
-  speedLevel: 04000000
-  spawnTime: 15
+  powerLevel: 2c010000
+  heartLevel: d0070000
+  speedLevel: 05000000
+  spawnTime: 5
   skillCooldown: 0
-  attackRange: 3
-  rangedAttack: 0
-  animatorController: {fileID: 22100000, guid: 6003c5598b3e48349b04e547f08bceae, type: 2}
-  spawnCost: 52
+  attackRange: 0.5
+  rangedAttack: 1
+  animatorController: {fileID: 22100000, guid: e4c0199d0696c58478da81b0e0c2cd5f, type: 2}
+  spawnCost: 45

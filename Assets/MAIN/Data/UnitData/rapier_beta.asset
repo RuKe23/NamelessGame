@@ -23,10 +23,10 @@ MonoBehaviour:
   levelUpMoney: ae010000
   skillLevel:
   - Value: []
-  powerLevel: 84030000
-  heartLevel: 6e140000
+  powerLevel: bc020000
+  heartLevel: 68100000
   speedLevel: 0f000000
-  spawnTime: 0
+  spawnTime: 25
   skillCooldown: 0
   attackRange: 1
   rangedAttack: 0

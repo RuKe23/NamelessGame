@@ -30,6 +30,7 @@ public class StageData : ScriptableObject
 
     [Header("In Game")]
     public float backgroundLength;
+    public int EnemyPlayerHP;
 
     [Header("etc")]
     public Vector2 stagePosition;
